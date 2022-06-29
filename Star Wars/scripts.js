@@ -9,10 +9,10 @@ form.addEventListener('submit', getApi);
 
 function getApi(e){
     e.preventDefault();
-    console.log("Pog Pog Pog");
+
     let item = document.getElementById("item").value;
     document.getElementById("item").value = "";
-    /*Skriv din kod här*/
+    
     fetch("https://www.swapi.tech/api/people/?name="+item)
     .then(res => res.json())
     .then(data =>
